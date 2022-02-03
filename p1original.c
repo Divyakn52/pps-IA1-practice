@@ -1,9 +1,9 @@
 #include<stdio.h>
 void input(int *a,int*b)
 {
-  printf("enter two numbers\n")
+  printf("enter two numbers\n");
   scanf("%d %d",a,b);
-  return 0;
+  return ;
 }
 void add(int a,int b,int *sum)
 {
@@ -15,7 +15,7 @@ void output(int a,int b,int sum)
 }
 int main()
 {
-  int x,y,ans
+  int x,y,ans;
   input(&x,&y);
   add(x,y,&ans);
   output(x,y,ans);
